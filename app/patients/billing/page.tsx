@@ -20,7 +20,7 @@ export default function PatientBillingPage() {
             <Card>
               <CardContent className="p-6">
                 <p className="text-sm text-slate-600">Total Paid</p>
-                <p className="text-3xl font-bold mt-2" style={{ color: '#1FA34A' }}>₹1,45,000</p>
+                <p className="text-3xl font-bold text-green-600 mt-2">₹1,45,000</p>
                 <p className="text-xs text-slate-500 mt-1">This year</p>
               </CardContent>
             </Card>
@@ -34,7 +34,7 @@ export default function PatientBillingPage() {
             <Card>
               <CardContent className="p-6">
                 <p className="text-sm text-slate-600">Insurance Covered</p>
-                <p className="text-3xl font-bold mt-2" style={{ color: '#1FA34A' }}>₹85,000</p>
+                <p className="text-3xl font-bold text-blue-600 mt-2">₹85,000</p>
                 <p className="text-xs text-slate-500 mt-1">58% of total</p>
               </CardContent>
             </Card>
@@ -56,8 +56,8 @@ export default function PatientBillingPage() {
                 ].map((invoice, idx) => (
                   <div key={idx} className="flex items-center justify-between p-4 border border-slate-200 rounded-lg">
                     <div className="flex items-center gap-4">
-                      <div className="h-12 w-12 rounded-full bg-cyan-100 flex items-center justify-center">
-                        <CreditCard className="h-6 w-6" style={{ color: '#1FA34A' }} />
+                      <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center">
+                        <CreditCard className="h-6 w-6" style={{ color: '#033053' }} />
                       </div>
                       <div>
                         <p className="font-semibold text-slate-900">{invoice.id}</p>
@@ -72,7 +72,7 @@ export default function PatientBillingPage() {
                       <span className="px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700">
                         {invoice.status}
                       </span>
-                      <Button size="sm" variant="outline" style={{ borderColor: '#1FA34A', color: '#1FA34A' }} className="hover:bg-green-50">
+                      <Button size="sm" style={{ backgroundColor: '#033053' }} className="hover:opacity-90 text-white">
                         <Download className="h-4 w-4 mr-2" />
                         Download
                       </Button>

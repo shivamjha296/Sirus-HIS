@@ -33,14 +33,14 @@ export default function Care360AdminDashboard() {
                       <TrendingUp className="h-3 w-3" /> +2 this month
                     </p>
                   </div>
-                  <div className="h-12 w-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#E0F2FE' }}>
-                    <Building2 className="h-6 w-6" style={{ color: '#033053' }} />
+                  <div className="h-12 w-12 rounded-full bg-teal-100 flex items-center justify-center">
+                    <Building2 className="h-6 w-6 text-teal-600" />
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="border-l-4" style={{ borderLeftColor: '#033053' }}>
+            <Card className="border-l-4" style={{ borderLeftColor: '#2563eb' }}>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
@@ -48,14 +48,14 @@ export default function Care360AdminDashboard() {
                     <p className="text-3xl font-bold text-slate-900 mt-2">9,704</p>
                     <p className="text-xs text-slate-500 mt-1">Across all hospitals</p>
                   </div>
-                  <div className="h-12 w-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#E0F2FE' }}>
-                    <Users className="h-6 w-6" style={{ color: '#033053' }} />
+                  <div className="h-12 w-12 rounded-full bg-teal-100 flex items-center justify-center">
+                    <Users className="h-6 w-6 text-teal-600" />
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="border-l-4" style={{ borderLeftColor: '#22C55E' }}>
+            <Card className="border-l-4" style={{ borderLeftColor: '#065429' }}>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
@@ -72,7 +72,7 @@ export default function Care360AdminDashboard() {
               </CardContent>
             </Card>
 
-            <Card className="border-l-4" style={{ borderLeftColor: '#033053' }}>
+            <Card className="border-l-4" style={{ borderLeftColor: '#1FA34A' }}>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
@@ -80,8 +80,8 @@ export default function Care360AdminDashboard() {
                     <p className="text-3xl font-bold text-slate-900 mt-2">99.8%</p>
                     <p className="text-xs" style={{ color: '#22C55E' }}>All systems operational</p>
                   </div>
-                  <div className="h-12 w-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#E0F2FE' }}>
-                    <Activity className="h-6 w-6" style={{ color: '#033053' }} />
+                  <div className="h-12 w-12 rounded-full bg-teal-100 flex items-center justify-center">
+                    <Activity className="h-6 w-6 text-teal-600" />
                   </div>
                 </div>
               </CardContent>
@@ -101,46 +101,46 @@ export default function Care360AdminDashboard() {
                 <CardContent>
                   <div className="space-y-4">
                     {[
-                      { 
-                        name: 'Apollo Hospitals - Delhi', 
-                        location: 'New Delhi, India', 
-                        beds: 450, 
+                      {
+                        name: 'Apollo Hospitals - Delhi',
+                        location: 'New Delhi, India',
+                        beds: 450,
                         users: 342,
                         status: 'Active',
                         plan: 'Enterprise',
                         onboarded: 'Jan 2024'
                       },
-                      { 
-                        name: 'Max Healthcare - Mumbai', 
-                        location: 'Mumbai, India', 
-                        beds: 380, 
+                      {
+                        name: 'Max Healthcare - Mumbai',
+                        location: 'Mumbai, India',
+                        beds: 380,
                         users: 298,
                         status: 'Active',
                         plan: 'Professional',
                         onboarded: 'Feb 2024'
                       },
-                      { 
-                        name: 'Fortis Hospital - Bangalore', 
-                        location: 'Bangalore, India', 
-                        beds: 320, 
+                      {
+                        name: 'Fortis Hospital - Bangalore',
+                        location: 'Bangalore, India',
+                        beds: 320,
                         users: 256,
                         status: 'Active',
                         plan: 'Professional',
                         onboarded: 'Mar 2024'
                       },
-                      { 
-                        name: 'Manipal Hospital - Chennai', 
-                        location: 'Chennai, India', 
-                        beds: 290, 
+                      {
+                        name: 'Manipal Hospital - Chennai',
+                        location: 'Chennai, India',
+                        beds: 290,
                         users: 221,
                         status: 'Active',
                         plan: 'Standard',
                         onboarded: 'Apr 2024'
                       },
-                      { 
-                        name: 'AIIMS - Hyderabad', 
-                        location: 'Hyderabad, India', 
-                        beds: 500, 
+                      {
+                        name: 'AIIMS - Hyderabad',
+                        location: 'Hyderabad, India',
+                        beds: 500,
                         users: 412,
                         status: 'Setup Pending',
                         plan: 'Enterprise',

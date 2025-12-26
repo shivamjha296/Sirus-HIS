@@ -28,8 +28,8 @@ export default function PrescriptionsPage() {
                 ].map((prescription, idx) => (
                   <div key={idx} className="flex items-center justify-between p-4 border border-slate-200 rounded-lg hover:bg-slate-50">
                     <div className="flex items-center gap-4">
-                      <div className="h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center">
-                        <Pill className="h-6 w-6" style={{ color: '#1FA34A' }} />
+                      <div className="h-12 w-12 rounded-full bg-pink-100 flex items-center justify-center">
+                        <Pill className="h-6 w-6 text-pink-600" />
                       </div>
                       <div>
                         <p className="font-semibold text-slate-900">{prescription.medicine}</p>
@@ -43,7 +43,7 @@ export default function PrescriptionsPage() {
                         <p className="font-medium text-slate-900">{prescription.duration}</p>
                       </div>
                       <Badge variant="success">{prescription.status}</Badge>
-                      <Button size="sm" variant="outline" style={{ borderColor: '#1FA34A', color: '#1FA34A' }} className="hover:bg-green-50">Refill</Button>
+                      <Button size="sm" style={{ backgroundColor: '#033053' }} className="hover:opacity-90 text-white">Refill</Button>
                     </div>
                   </div>
                 ))}
@@ -75,7 +75,7 @@ export default function PrescriptionsPage() {
                     </div>
                     <div className="flex items-center gap-4">
                       <Badge variant="secondary">{prescription.status}</Badge>
-                      <Button size="sm" style={{ backgroundColor: '#033053' }} className="text-white hover:opacity-90">View Details</Button>
+                      <Button size="sm" style={{ backgroundColor: '#033053' }} className="hover:opacity-90 text-white">View Details</Button>
                     </div>
                   </div>
                 ))}

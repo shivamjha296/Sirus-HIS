@@ -27,8 +27,8 @@ export default function HealthRecordsPage() {
                 <CardContent className="p-6">
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-start gap-4">
-                      <div className="h-12 w-12 rounded-lg bg-cyan-100 flex items-center justify-center">
-                        <FileText className="h-6 w-6" style={{ color: '#1FA34A' }} />
+                      <div className="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center">
+                        <FileText className="h-6 w-6" style={{ color: '#033053' }} />
                       </div>
                       <div>
                         <h3 className="font-bold text-slate-900">{record.title}</h3>
@@ -39,7 +39,7 @@ export default function HealthRecordsPage() {
                   </div>
                   <div className="flex gap-2 pt-4 border-t">
                     <Button size="sm" className="flex-1 text-white hover:opacity-90" style={{ backgroundColor: '#033053' }}>View Record</Button>
-                    <Button size="sm" variant="outline" className="flex-1 hover:bg-green-50" style={{ borderColor: '#1FA34A', color: '#1FA34A' }}>
+                    <Button size="sm" variant="outline" className="flex-1 hover:bg-blue-50" style={{ borderColor: '#033053', color: '#033053' }}>
                       <Download className="h-4 w-4 mr-2" />
                       Download
                     </Button>

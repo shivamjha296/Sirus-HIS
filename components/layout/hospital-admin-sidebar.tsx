@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faIndianRupeeSign } from '@fortawesome/free-solid-svg-icons'
-import { 
+import {
   LayoutDashboard,
   Users,
   UserCog,
@@ -38,7 +38,7 @@ export function HospitalAdminSidebar() {
   return (
     <aside className={cn(
       "fixed left-0 top-0 z-40 h-screen border-r border-slate-200 bg-white transition-all duration-300",
-      isCollapsed ? "w-16" : "w-60"
+      isCollapsed ? "w-16" : "w-[16.5rem]"
     )}>
       <div className="flex h-full flex-col">
         {/* Logo and Toggle */}
@@ -65,7 +65,19 @@ export function HospitalAdminSidebar() {
         </div>
 
         {/* Spacer for marquee strip */}
-        <div className="h-8 bg-slate-50 border-b border-slate-200"></div>
+        {/* Marquee Strip */}
+        <div className="h-8 bg-[#064e3b] flex items-center overflow-hidden">
+          <div className="animate-marquee whitespace-nowrap flex items-center">
+            <span className="text-xs font-bold text-white tracking-widest mx-4">CARE 360</span>
+            <span className="text-xs font-bold text-white tracking-widest mx-4">CARE 360</span>
+            <span className="text-xs font-bold text-white tracking-widest mx-4">CARE 360</span>
+            <span className="text-xs font-bold text-white tracking-widest mx-4">CARE 360</span>
+            <span className="text-xs font-bold text-white tracking-widest mx-4">CARE 360</span>
+            <span className="text-xs font-bold text-white tracking-widest mx-4">CARE 360</span>
+            <span className="text-xs font-bold text-white tracking-widest mx-4">CARE 360</span>
+            <span className="text-xs font-bold text-white tracking-widest mx-4">CARE 360</span>
+          </div>
+        </div>
 
         {/* Role Badge */}
         {!isCollapsed && (
@@ -78,7 +90,7 @@ export function HospitalAdminSidebar() {
         <nav className="flex-1 space-y-1 overflow-y-auto px-3 py-4">
           {menuItems.map((item) => {
             const isActive = pathname === item.href || (pathname?.startsWith(item.href + '/') && item.href !== '/hospital-admin')
-            
+
             return (
               <Link
                 key={item.href}

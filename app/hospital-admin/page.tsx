@@ -4,11 +4,11 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faIndianRupeeSign } from '@fortawesome/free-solid-svg-icons'
-import { 
-  Users, 
-  UserCog, 
-  Stethoscope, 
-  Bed, 
+import {
+  Users,
+  UserCog,
+  Stethoscope,
+  Bed,
   Activity,
   TrendingUp,
   Calendar,
@@ -31,7 +31,7 @@ export default function HospitalAdminDashboard() {
 
           {/* Key Metrics */}
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            <Card style={{ borderLeftWidth: '4px', borderLeftColor: '#2563eb' }}>
+            <Card style={{ borderLeftWidth: '4px', borderLeftColor: '#033053' }}>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
@@ -48,7 +48,7 @@ export default function HospitalAdminDashboard() {
               </CardContent>
             </Card>
 
-            <Card style={{ borderLeftWidth: '4px', borderLeftColor: '#2F7EA5' }}>
+            <Card style={{ borderLeftWidth: '4px', borderLeftColor: '#2563eb' }}>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
@@ -56,14 +56,14 @@ export default function HospitalAdminDashboard() {
                     <p className="text-3xl font-bold text-slate-900 mt-2">120</p>
                     <p className="text-xs text-slate-500 mt-1">85 on duty today</p>
                   </div>
-                  <div className="h-12 w-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#E0F2FE', color: '#2F7EA5' }}>
+                  <div className="h-12 w-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#DBEAFE', color: '#2563eb' }}>
                     <Stethoscope className="h-6 w-6" />
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card style={{ borderLeftWidth: '4px', borderLeftColor: '#2F7EA5' }}>
+            <Card style={{ borderLeftWidth: '4px', borderLeftColor: '#065429' }}>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
@@ -71,14 +71,14 @@ export default function HospitalAdminDashboard() {
                     <p className="text-3xl font-bold text-slate-900 mt-2">73%</p>
                     <p className="text-xs text-slate-500 mt-1">328 of 450 beds</p>
                   </div>
-                  <div className="h-12 w-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#E0F2FE', color: '#2F7EA5' }}>
+                  <div className="h-12 w-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#DBEAFE', color: '#2563eb' }}>
                     <Bed className="h-6 w-6" />
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card style={{ borderLeftWidth: '4px', borderLeftColor: '#2F7EA5' }}>
+            <Card style={{ borderLeftWidth: '4px', borderLeftColor: '#1FA34A' }}>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
@@ -86,7 +86,7 @@ export default function HospitalAdminDashboard() {
                     <p className="text-3xl font-bold text-slate-900 mt-2">342</p>
                     <p className="text-xs text-slate-500 mt-1">Total employees</p>
                   </div>
-                  <div className="h-12 w-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#E0F2FE', color: '#2F7EA5' }}>
+                  <div className="h-12 w-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#DBEAFE', color: '#2563eb' }}>
                     <UserCog className="h-6 w-6" />
                   </div>
                 </div>

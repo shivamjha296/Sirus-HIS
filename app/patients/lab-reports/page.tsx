@@ -27,8 +27,8 @@ export default function LabReportsPage() {
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-4">
-                      <div className="h-12 w-12 rounded-full bg-cyan-100 flex items-center justify-center">
-                        <Activity className="h-6 w-6" style={{ color: '#1FA34A' }} />
+                      <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center">
+                        <Activity className="h-6 w-6" style={{ color: '#033053' }} />
                       </div>
                       <div>
                         <h3 className="font-bold text-slate-900">{report.test}</h3>
@@ -39,11 +39,11 @@ export default function LabReportsPage() {
                       <Badge variant={report.status === 'Normal' ? 'success' : 'warning'}>
                         {report.status}
                       </Badge>
-                      <Button size="sm" variant="outline" style={{ borderColor: '#1FA34A', color: '#1FA34A' }} className="hover:bg-green-50">
+                      <Button size="sm" variant="outline" className="hover:bg-slate-50">
                         <FileText className="h-4 w-4 mr-2" />
                         View Report
                       </Button>
-                      <Button size="sm" style={{ backgroundColor: '#1FA34A' }} className="text-white hover:opacity-90">
+                      <Button size="sm" variant="outline" className="hover:bg-slate-50">
                         <Download className="h-4 w-4 mr-2" />
                         Download
                       </Button>

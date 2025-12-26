@@ -6,11 +6,11 @@ import { ReactNode } from 'react'
 
 export function MainContent({ children }: { children: ReactNode }) {
   const { isCollapsed } = useSidebar()
-  
+
   return (
     <main className={cn(
       "pt-24 transition-all duration-300",
-      isCollapsed ? "ml-16" : "ml-60"
+      isCollapsed ? "ml-16" : "ml-[16.5rem]"
     )}>
       {children}
     </main>

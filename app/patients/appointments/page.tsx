@@ -14,7 +14,7 @@ export default function MyAppointmentsPage() {
               <h1 className="text-3xl font-bold text-slate-900">My Appointments</h1>
               <p className="text-slate-600 mt-1">View and manage your appointments</p>
             </div>
-            <Button style={{ backgroundColor: '#033053' }} className="hover:opacity-90">
+            <Button className="hover:opacity-90 text-white" style={{ backgroundColor: '#1FA34A' }}>
               <Plus className="h-4 w-4 mr-2" />
               Book Appointment
             </Button>
@@ -34,8 +34,8 @@ export default function MyAppointmentsPage() {
                 ].map((appointment, idx) => (
                   <div key={idx} className="flex items-center justify-between p-4 border border-slate-200 rounded-lg hover:bg-slate-50">
                     <div className="flex items-center gap-4">
-                      <div className="h-12 w-12 rounded-full bg-cyan-100 flex items-center justify-center">
-                        <Calendar className="h-6 w-6" style={{ color: '#1FA34A' }} />
+                      <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center">
+                        <Calendar className="h-6 w-6 text-blue-600" />
                       </div>
                       <div>
                         <p className="font-semibold text-slate-900">{appointment.doctor}</p>
@@ -52,7 +52,7 @@ export default function MyAppointmentsPage() {
                       <Badge variant={appointment.status === 'Confirmed' ? 'success' : 'secondary'}>
                         {appointment.status}
                       </Badge>
-                      <Button size="sm" variant="outline" style={{ borderColor: '#1FA34A', color: '#1FA34A' }} className="hover:bg-green-50">Reschedule</Button>
+                      <Button size="sm" variant="outline" style={{ borderColor: '#033053', color: '#033053' }} className="hover:bg-blue-50">Reschedule</Button>
                     </div>
                   </div>
                 ))}
@@ -87,7 +87,7 @@ export default function MyAppointmentsPage() {
                         <p className="text-sm text-slate-600">{appointment.time}</p>
                       </div>
                       <Badge variant="secondary">{appointment.status}</Badge>
-                      <Button size="sm" variant="outline">View Details</Button>
+                      <Button size="sm" style={{ backgroundColor: '#033053' }} className="hover:opacity-90 text-white">View Details</Button>
                     </div>
                   </div>
                 ))}

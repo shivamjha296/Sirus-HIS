@@ -3,10 +3,10 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { 
-  Calendar, 
-  FileText, 
-  Pill, 
+import {
+  Calendar,
+  FileText,
+  Pill,
   Heart,
   Download,
   Video,
@@ -42,7 +42,7 @@ export default function PatientDashboard() {
                 <Video className="h-4 w-4 mr-2" />
                 Tele-Consult
               </Button>
-              <Button style={{ backgroundColor: '#033053' }} className="hover:opacity-90">
+              <Button className="hover:opacity-90 text-white" style={{ backgroundColor: '#1FA34A' }}>
                 <Plus className="h-4 w-4 mr-2" />
                 Book Appointment
               </Button>
@@ -51,7 +51,7 @@ export default function PatientDashboard() {
 
           {/* Health Overview Cards */}
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            <Card style={{ borderLeftWidth: '4px', borderLeftColor: '#1FA34A' }} className="hover:shadow-md transition-shadow">
+            <Card className="border-l-4 hover:shadow-md transition-shadow" style={{ borderLeftColor: '#033053' }}>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
@@ -59,14 +59,14 @@ export default function PatientDashboard() {
                     <p className="text-3xl font-bold text-slate-900 mt-2">2</p>
                     <p className="text-xs text-slate-500 mt-1">Appointments</p>
                   </div>
-                  <div className="h-12 w-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#D1FAE5', color: '#1FA34A' }}>
-                    <Calendar className="h-6 w-6" />
+                  <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center">
+                    <Calendar className="h-6 w-6 text-blue-600" />
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card style={{ borderLeftWidth: '4px', borderLeftColor: '#1FA34A' }} className="hover:shadow-md transition-shadow">
+            <Card className="border-l-4 hover:shadow-md transition-shadow" style={{ borderLeftColor: '#2563eb' }}>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
@@ -74,14 +74,14 @@ export default function PatientDashboard() {
                     <p className="text-3xl font-bold text-slate-900 mt-2">3</p>
                     <p className="text-xs text-slate-500 mt-1">Prescriptions</p>
                   </div>
-                  <div className="h-12 w-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#D1FAE5', color: '#1FA34A' }}>
-                    <Pill className="h-6 w-6" />
+                  <div className="h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center">
+                    <Pill className="h-6 w-6 text-purple-600" />
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card style={{ borderLeftWidth: '4px', borderLeftColor: '#1FA34A' }} className="hover:shadow-md transition-shadow">
+            <Card className="border-l-4 hover:shadow-md transition-shadow" style={{ borderLeftColor: '#065429' }}>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
@@ -89,23 +89,23 @@ export default function PatientDashboard() {
                     <p className="text-3xl font-bold text-slate-900 mt-2">5</p>
                     <p className="text-xs text-slate-500 mt-1">Lab Reports</p>
                   </div>
-                  <div className="h-12 w-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#D1FAE5', color: '#1FA34A' }}>
-                    <FileText className="h-6 w-6" />
+                  <div className="h-12 w-12 rounded-full bg-amber-100 flex items-center justify-center">
+                    <FileText className="h-6 w-6 text-amber-600" />
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card style={{ borderLeftWidth: '4px', borderLeftColor: '#1FA34A' }} className="hover:shadow-md transition-shadow">
+            <Card className="border-l-4 hover:shadow-md transition-shadow" style={{ borderLeftColor: '#1FA34A' }}>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-sm font-medium text-slate-600">Health Score</p>
                     <p className="text-3xl font-bold text-slate-900 mt-2">85</p>
-                    <p className="text-xs mt-1" style={{ color: '#1FA34A' }}>Good ✓</p>
+                    <p className="text-xs text-green-600 mt-1">Good ✓</p>
                   </div>
-                  <div className="h-12 w-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#D1FAE5', color: '#1FA34A' }}>
-                    <Heart className="h-6 w-6" />
+                  <div className="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center">
+                    <Heart className="h-6 w-6 text-green-600" />
                   </div>
                 </div>
               </CardContent>
@@ -127,27 +127,27 @@ export default function PatientDashboard() {
                 <CardContent>
                   <div className="space-y-4">
                     {[
-                      { 
-                        doctor: 'Dr. Priya Sharma', 
-                        specialty: 'Cardiologist', 
-                        date: 'Dec 28, 2025', 
+                      {
+                        doctor: 'Dr. Priya Sharma',
+                        specialty: 'Cardiologist',
+                        date: 'Dec 28, 2025',
                         time: '10:30 AM',
                         type: 'Follow-up',
                         status: 'Confirmed'
                       },
-                      { 
-                        doctor: 'Dr. Amit Verma', 
-                        specialty: 'General Physician', 
-                        date: 'Jan 05, 2026', 
+                      {
+                        doctor: 'Dr. Amit Verma',
+                        specialty: 'General Physician',
+                        date: 'Jan 05, 2026',
                         time: '02:00 PM',
                         type: 'Consultation',
                         status: 'Confirmed'
                       },
                     ].map((apt, idx) => (
-                      <div key={idx} className="flex items-center justify-between p-4 rounded-lg" style={{ borderLeftWidth: '4px', borderLeftColor: '#1FA34A', backgroundColor: '#D1FAE5' }}>
+                      <div key={idx} className="flex items-center justify-between p-4 border-l-4 border-l-blue-600 bg-blue-50 rounded-lg">
                         <div className="flex items-center gap-4">
                           <Avatar className="h-12 w-12">
-                            <AvatarFallback style={{ backgroundColor: '#1FA34A' }} className="text-white">
+                            <AvatarFallback className="bg-blue-600 text-white">
                               {apt.doctor.split(' ')[1][0]}{apt.doctor.split(' ')[2]?.[0] || ''}
                             </AvatarFallback>
                           </Avatar>
@@ -193,10 +193,9 @@ export default function PatientDashboard() {
                     ].map((report, idx) => (
                       <div key={idx} className="flex items-center justify-between p-4 border border-slate-200 rounded-lg hover:bg-slate-50">
                         <div className="flex items-center gap-3">
-                          <div className={`h-10 w-10 rounded-lg flex items-center justify-center ${
-                            report.critical ? 'bg-red-100' : ''
-                          }`} style={!report.critical ? { backgroundColor: '#D1FAE5', color: '#1FA34A' } : {}}>
-                            <Activity className={`h-5 w-5 ${report.critical ? 'text-red-600' : ''}`} style={!report.critical ? { color: '#1FA34A' } : {}} />
+                          <div className={`h-10 w-10 rounded-lg flex items-center justify-center ${report.critical ? 'bg-red-100' : 'bg-amber-100'
+                            }`}>
+                            <Activity className={`h-5 w-5 ${report.critical ? 'text-red-600' : 'text-amber-600'}`} />
                           </div>
                           <div>
                             <p className="font-semibold text-slate-900">{report.name}</p>
@@ -257,7 +256,7 @@ export default function PatientDashboard() {
                   <CardTitle className="text-lg">Quick Actions</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
-                  <Button className="w-full justify-start hover:opacity-90" style={{ backgroundColor: '#1FA34A' }}>
+                  <Button className="w-full justify-start text-white hover:opacity-90" style={{ backgroundColor: '#1FA34A' }}>
                     <Calendar className="h-4 w-4 mr-2" />
                     Book Appointment
                   </Button>
@@ -286,22 +285,22 @@ export default function PatientDashboard() {
                   <CardTitle className="text-lg">Health Reminders</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
-                  <div className="flex items-start gap-3 p-3 rounded-lg" style={{ backgroundColor: '#D1FAE5', borderColor: '#1FA34A', borderWidth: '1px' }}>
-                    <Bell className="h-5 w-5 mt-0.5" style={{ color: '#1FA34A' }} />
+                  <div className="flex items-start gap-3 p-3 rounded-lg bg-purple-50 border border-purple-200">
+                    <Bell className="h-5 w-5 mt-0.5 text-purple-600" />
                     <div>
                       <p className="text-sm font-semibold text-slate-900">Medication</p>
                       <p className="text-xs text-slate-600 mt-1">Take Metformin - 2:00 PM</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3 p-3 rounded-lg" style={{ backgroundColor: '#D1FAE5', borderColor: '#1FA34A', borderWidth: '1px' }}>
-                    <Activity className="h-5 w-5 mt-0.5" style={{ color: '#1FA34A' }} />
+                  <div className="flex items-start gap-3 p-3 rounded-lg bg-amber-50 border border-amber-200">
+                    <Activity className="h-5 w-5 mt-0.5 text-amber-600" />
                     <div>
                       <p className="text-sm font-semibold text-slate-900">Exercise</p>
                       <p className="text-xs text-slate-600 mt-1">30 min walk - Evening</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3 p-3 rounded-lg" style={{ backgroundColor: '#D1FAE5', borderColor: '#1FA34A', borderWidth: '1px' }}>
-                    <FileText className="h-5 w-5 mt-0.5" style={{ color: '#1FA34A' }} />
+                  <div className="flex items-start gap-3 p-3 rounded-lg bg-blue-50 border border-blue-200">
+                    <FileText className="h-5 w-5 mt-0.5 text-blue-600" />
                     <div>
                       <p className="text-sm font-semibold text-slate-900">Lab Test</p>
                       <p className="text-xs text-slate-600 mt-1">HbA1c due in 5 days</p>
@@ -321,14 +320,14 @@ export default function PatientDashboard() {
                     { medicine: 'Amlodipine 5mg', dosage: 'Once daily', days: '22 days left' },
                     { medicine: 'Aspirin 75mg', dosage: 'Once daily', days: '8 days left' },
                   ].map((med, idx) => (
-                    <div key={idx} className="p-3 rounded-lg" style={{ backgroundColor: '#D1FAE5', borderColor: '#1FA34A', borderWidth: '1px' }}>
+                    <div key={idx} className="p-3 rounded-lg bg-purple-50 border border-purple-200">
                       <div className="flex items-start justify-between">
                         <div className="flex items-start gap-2">
-                          <Pill className="h-4 w-4 mt-1" style={{ color: '#1FA34A' }} />
+                          <Pill className="h-4 w-4 mt-1 text-purple-600" />
                           <div>
                             <p className="text-sm font-semibold text-slate-900">{med.medicine}</p>
                             <p className="text-xs text-slate-600">{med.dosage}</p>
-                            <p className="text-xs mt-1" style={{ color: '#1FA34A' }}>{med.days}</p>
+                            <p className="text-xs mt-1 text-purple-600">{med.days}</p>
                           </div>
                         </div>
                       </div>

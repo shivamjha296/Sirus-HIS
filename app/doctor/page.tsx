@@ -3,12 +3,12 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { 
-  Calendar, 
-  Clock, 
-  Users, 
-  FileText, 
-  Activity, 
+import {
+  Calendar,
+  Clock,
+  Users,
+  FileText,
+  Activity,
   Plus,
   Video,
   AlertCircle,
@@ -41,7 +41,7 @@ export default function DoctorDashboard() {
 
           {/* Quick Stats */}
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            <Card className="border-l-4" style={{ borderLeftColor: '#065429' }}>
+            <Card className="border-l-4" style={{ borderLeftColor: '#033053' }}>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
@@ -56,7 +56,7 @@ export default function DoctorDashboard() {
               </CardContent>
             </Card>
 
-            <Card className="border-l-4" style={{ borderLeftColor: '#8BC53F' }}>
+            <Card className="border-l-4" style={{ borderLeftColor: '#2563eb' }}>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
@@ -86,7 +86,7 @@ export default function DoctorDashboard() {
               </CardContent>
             </Card>
 
-            <Card className="border-l-4" style={{ borderLeftColor: '#8BC53F' }}>
+            <Card className="border-l-4" style={{ borderLeftColor: '#1FA34A' }}>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
@@ -125,16 +125,16 @@ export default function DoctorDashboard() {
                       { time: '11:30 AM', patient: 'Vikram Singh', age: 51, type: 'Emergency', status: 'waiting', mrn: 'MRN-2405' },
                       { time: '02:00 PM', patient: 'Anita Desai', age: 39, type: 'Tele-Consultation', status: 'scheduled', mrn: 'MRN-2406' },
                     ].map((apt, idx) => (
-                      <div 
-                        key={idx} 
+                      <div
+                        key={idx}
                         className={`flex items-center justify-between p-4 rounded-lg border-l-4`}
                         style={{
                           borderLeftColor: apt.status === 'completed' ? '#8BC53F' :
-                                         apt.status === 'in-progress' ? '#065429' :
-                                         apt.status === 'waiting' ? '#f97316' : '#cbd5e1',
+                            apt.status === 'in-progress' ? '#065429' :
+                              apt.status === 'waiting' ? '#f97316' : '#cbd5e1',
                           backgroundColor: apt.status === 'completed' ? '#f0fdf4' :
-                                          apt.status === 'in-progress' ? '#ecfdf5' :
-                                          apt.status === 'waiting' ? '#ffedd5' : '#f8fafc'
+                            apt.status === 'in-progress' ? '#ecfdf5' :
+                              apt.status === 'waiting' ? '#ffedd5' : '#f8fafc'
                         }}
                       >
                         <div className="flex items-center gap-4">
@@ -166,13 +166,13 @@ export default function DoctorDashboard() {
                         <div className="flex items-center gap-3">
                           <Badge variant={
                             apt.status === 'completed' ? 'success' :
-                            apt.status === 'in-progress' ? 'default' :
-                            apt.status === 'waiting' ? 'warning' :
-                            'outline'
+                              apt.status === 'in-progress' ? 'default' :
+                                apt.status === 'waiting' ? 'warning' :
+                                  'outline'
                           }>
-                            {apt.status === 'in-progress' ? 'In Progress' : 
-                             apt.status === 'waiting' ? 'Waiting' :
-                             apt.status === 'completed' ? 'Completed' : 'Scheduled'}
+                            {apt.status === 'in-progress' ? 'In Progress' :
+                              apt.status === 'waiting' ? 'Waiting' :
+                                apt.status === 'completed' ? 'Completed' : 'Scheduled'}
                           </Badge>
                           {apt.status !== 'completed' && (
                             <Button size="sm" style={{ backgroundColor: '#065429' }} className="hover:opacity-90">
@@ -227,7 +227,7 @@ export default function DoctorDashboard() {
                           </div>
                           <Badge variant={
                             caseItem.status === 'Critical' ? 'destructive' :
-                            caseItem.status === 'Stable' ? 'success' : 'default'
+                              caseItem.status === 'Stable' ? 'success' : 'default'
                           }>
                             {caseItem.status}
                           </Badge>

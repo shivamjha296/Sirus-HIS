@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { 
+import {
   LayoutDashboard,
   Calendar,
   Users,
@@ -35,7 +35,7 @@ export function DoctorSidebar() {
   return (
     <aside className={cn(
       "fixed left-0 top-0 z-40 h-screen border-r border-slate-200 bg-white transition-all duration-300",
-      isCollapsed ? "w-16" : "w-60"
+      isCollapsed ? "w-16" : "w-[16.5rem]"
     )}>
       <div className="flex h-full flex-col">
         {/* Logo and Toggle */}
@@ -62,7 +62,19 @@ export function DoctorSidebar() {
         </div>
 
         {/* Spacer for marquee strip */}
-        <div className="h-8 bg-slate-50 border-b border-slate-200"></div>
+        {/* Marquee Strip */}
+        <div className="h-8 bg-[#064e3b] flex items-center overflow-hidden">
+          <div className="animate-marquee whitespace-nowrap flex items-center">
+            <span className="text-xs font-bold text-white tracking-widest mx-4">CARE 360</span>
+            <span className="text-xs font-bold text-white tracking-widest mx-4">CARE 360</span>
+            <span className="text-xs font-bold text-white tracking-widest mx-4">CARE 360</span>
+            <span className="text-xs font-bold text-white tracking-widest mx-4">CARE 360</span>
+            <span className="text-xs font-bold text-white tracking-widest mx-4">CARE 360</span>
+            <span className="text-xs font-bold text-white tracking-widest mx-4">CARE 360</span>
+            <span className="text-xs font-bold text-white tracking-widest mx-4">CARE 360</span>
+            <span className="text-xs font-bold text-white tracking-widest mx-4">CARE 360</span>
+          </div>
+        </div>
 
         {/* Role Badge */}
         {!isCollapsed && (
@@ -76,7 +88,7 @@ export function DoctorSidebar() {
           {menuItems.map((item) => {
             const Icon = item.icon
             const isActive = pathname === item.href || (pathname?.startsWith(item.href + '/') && item.href !== '/doctor')
-            
+
             return (
               <Link
                 key={item.href}
